@@ -4,25 +4,21 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class Opdracht1 extends Applet{
-    Button knop;
-    TextField tv1;
-    TextField tv2;
-    TextField tv3;
-    int Valerie = 40;
-    int Jeroen = 80;
-    int Hans = 60;
-    Label valerielabel;
-    Label jeroenlabel;
-    Label hanslabel;
+    private TextField tv1;
+    private TextField tv2;
+    private TextField tv3;
+    private int Valerie = 40;
+    private int Jeroen = 80;
+    private int Hans = 60;
 
     public void init(){
-        valerielabel = new Label("Valerie");
-        jeroenlabel = new Label("Jeroen");
-        hanslabel = new Label("Hans");
+        Label valerielabel = new Label("Valerie");
+        Label jeroenlabel = new Label("Jeroen");
+        Label hanslabel = new Label("Hans");
         tv1 = new TextField(4);
         tv2 = new TextField(4);
         tv3 = new TextField(4);
-        knop = new Button("Toon");
+        Button knop = new Button("Toon");
         knop.addActionListener(new KnopListener());
         add(valerielabel);
         add(tv1);
